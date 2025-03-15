@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "friday2"
+version = "0.0.1"
+description = "Bot"
+requires-python = ">=3.12"
+dependencies = ['pyttsx3', 'pygdl', 'pyaudio', 'pydub', 'transformers', 'torch', 'numpy']
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE" }
+authors = [
+    {name = "Soumyo Deep Gupta", email = "deep.main.ac@gmail.com"}
+]
+maintainers = [
+    {name = "Soumyo Deep Gupta", email = "deep.main.ac@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    'Operating System :: Microsoft :: Windows',
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[tool.setuptools.package-data]
+"friday2" = [
+    "**/*.pyi",
+    "**/*.so"
+]
